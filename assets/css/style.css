@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.text-box{
+    overflow-x: hidden;
+   padding: 20px;
+}
+h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: "poppins";
+    position: relative;
+}
+
+h2::before,h2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+h2::before{
+    animation: type 3s steps(25) 1s forwards infinite;
+    width: 100%;
+}
+h2::after{
+    opacity: 1;
+    width: 2px;
+    animation: type 3s steps(15) 1s forwards infinite,blink 0.6s steps(5) infinite;
+
+}
+
+@keyframes type{
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    0%,50%{
+        opacity: 0;
+    }
+    51%,100%{
+        opacity: 1;
+    }
+} */
+
+.border{
+    width: 400px;
+    height: 400px;
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right,
+        #3c1053,
+        #ad5389);
+    background: linear-gradient(to right,
+        #3c1053,
+        #ad5389);
+    border-radius: 78% 22% 44% 56% / 44% 33% 67% 56%  ;
+}
+.progress-bar{
+    background-color: rgb(199, 193, 193);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.progress-amount{
+    background-color: rgba(126, 34, 206, 1);
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 3px; 
+}
