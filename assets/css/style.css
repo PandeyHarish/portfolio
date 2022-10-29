@@ -128,6 +128,8 @@
   background-color: var(--first-color);
   transform: translate(6px,-7px);
 }
+
+
 .typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15rem solid black; /* The typwriter cursor */
@@ -151,18 +153,6 @@
     50% { border-color: black; }
   }
 
-.border{
-    width: 400px;
-    height: 400px;
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right,
-        #3c1053,
-        #ad5389);
-    background: linear-gradient(to right,
-        #3c1053,
-        #ad5389);
-    border-radius: 78% 22% 44% 56% / 44% 33% 67% 56%  ;
-}
 .progress-bar{
     background-color: rgb(199, 193, 193);
     width: 100%;
