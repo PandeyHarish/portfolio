@@ -71,44 +71,18 @@ let swiper = new Swiper(".mySwiper,.mySwiper1", {
         }
 
 // dark light theme
-// const themeButton = document.getElementById('theme-button')
-// const darkTheme = 'dark-theme'
-// const iconTheme = 'ri-sun-line'
-// previously selected topic
-// const selectedTheme = localStorage.getItem('selected-theme')
-// const  selectedIcon = localStorage.getItem('selected-icon')
-
-// we obtain the current theme that interface has by validating the dark-theme class
-// const getCurrentTheme = () =>document.body.contains(darkTheme) ? 'dark' : 'light'
-// const getCurrentIcon = () =>document.body.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-// we validate if the user chose a topic
-// if(selectedTheme){
-//     document.body.classList[selectedTheme == 'dark' ? 'add' : 'remove'](darkTheme)
-//     themeButton.classList[selectedIcon == 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-// }
-
-// activate /deactivate the theme manually with the button
-// themeButton.addEventListener('click', () =>{
-//     document.body.classList.toggle(darkTheme)
-//     themeButton.classList.toggle(iconTheme)
-
-//     // we save the theme and th current icon that the user chose
-//     localStorage.setItem('selected-theme', getCurrentTheme())
-//     localStorage.setItem('selected-icon', getCurrentIcon())
-// })
-
-document.getElementById('sun').style.display = 'none'
+var sun = document.getElementById('sun');
+var moon = document.getElementById('moon');
+sun.classList.add('hidden');
 function dark() {   
     var element = document.body;
     element.classList.toggle("dark-mode");
-    document.getElementById('sun').style.display = 'block'
-    document.getElementById('moon').style.display = 'none'
- }
- function light() {
-    var element = document.body;
-    element.classList.remove("dark-mode");
-    document.getElementById('moon').style.display = 'block'
-    document.getElementById('sun').style.display = 'none'
-    
+    if(sun.classList.contains('hidden')){
+        moon.classList.add('hidden');
+        sun.classList.remove('hidden');
+    }
+    else{
+        sun.classList.add('hidden');
+        moon.classList.remove('hidden');
+    }
  }

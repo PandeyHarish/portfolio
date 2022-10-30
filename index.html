@@ -22,7 +22,7 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
-<body class="body-font font-poppins">
+<body class="font-['Poppins']">
     <!-- desktop navbar -->
 
     <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  py-4 z-10">
@@ -40,17 +40,14 @@
                 <li class="inline  p-2 text-lg"><a href="#contact">Contact me</a></li>
                 <!-- theme change button -->
                 <li class="inline  p-2 text-lg ">
-                    <a>
-                        <i class="ri-moon-line inline-block align-bottom " onclick="dark()" id="moon"></i>  
+                    <a href="#" onclick="dark()" id="moon">
+                        <i class="ri-moon-line inline-block align-bottom "  ></i>  
                     </a>
-                    
-                </li>
-                <li class="inline  p-2 text-lg ">
-                    <a href="#">
-                        <i class="ri-sun-line inline-block align-bottom " onclick="light()" id="sun"></i>
+                    <a href="#" onclick="dark()" id="sun">
+                        <i class="ri-sun-line inline-block align-bottom " ></i>
                     </a>
                 </li>
-            </ul>
+                
         </div>
     </section>
 
@@ -75,7 +72,7 @@
                 <h3 class="opacity-75 text-lg">High level experience in web design and development knowledge, producing quality works.</h3>
 
                 <div class="mt-16">
-                    <a href="#" class=" text-white bg-blue-500 hover:bg-blue-700 px-12 py-6 rounded-lg text-xl">Contact me <i class="ri-send-plane-2-fill pl-3 inline-block align-bottom"></i></a>
+                    <a href="#contact" class=" text-white bg-blue-500 hover:bg-blue-700 px-12 py-6 rounded-lg text-xl">Contact me <i class="ri-send-plane-2-fill pl-3 inline-block align-bottom"></i></a>
                 </div>
             </div>
 
@@ -259,7 +256,7 @@
                     </div>
 
                     <!-- Qualification 4 -->
-                    <div class="qualification__data mr-[11.7rem]">
+                    <div class="qualification__data mr-[12.4rem]">
                         <div></div>
                         <div class="">
                             <h3 class="qualification__title font-bold">Web Development </h3>
@@ -334,7 +331,7 @@
                    </div>
 
                    <!-- Qualification 4 -->
-                   <div class="qualification__data mr-[11.7rem]">
+                   <div class="qualification__data mr-[12.4rem]">
                        <div></div>
                        <div class="">
                            <h3 class="qualification__title font-bold">Web Development </h3>
@@ -374,7 +371,7 @@
         </div>
         <!-- frontend modal -->
         <div class="fixed top-0 bottom-0 left-0 right-0 bg-black opacity-90 " id="modal">
-            <div class="w-[26rem] rounded-md h-64 p-5 bg-white mt-72 mx-auto ">
+            <div class="w-[26rem] rounded-md h-64 p-5 bg-white dark:bg-slate-600  mt-72 mx-auto ">
                 <div class="flex justify-between font-semibold text-lg">
                     <p class="font-medium">Frontend development</p>
                     <i class="ri-close-line cursor-pointer inline-block align-bottom" onclick="close0()"></i>
@@ -388,7 +385,7 @@
             </div>
         </div>
         <div class="fixed top-0 bottom-0 left-0 right-0 bg-black opacity-90 " id="modal1">
-            <div class="w-[26rem] rounded-md h-64 p-5 bg-white mt-72 mx-auto ">
+            <div class="w-[26rem] rounded-md h-64 p-5 bg-white dark:bg-slate-500 mt-72 mx-auto ">
                 <div class="flex justify-between font-semibold text-lg">
                     <p class="font-medium ">Backend development</p>
                     <i class="ri-close-line cursor-pointer" onclick="close0()"></i>
@@ -500,7 +497,8 @@
     </section>
 
     <!-- Contact me  -->
-    <section class="mt-32 ">
+    <i id="contact"></i>
+    <section class="mt-32 " >
         <h1 class="font-bold text-4xl text-center">Contact me</h1>
         <h3 class="text-center text-lg opacity-75 ">Get in touch</h3>
         <div class="mx-32 grid grid-cols-3">
