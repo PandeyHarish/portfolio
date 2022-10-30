@@ -70,6 +70,15 @@
 }
 
 
+/* varibales dark theme */
+
+
+.dark-mode{
+  background-color: rgb(28, 22, 65);
+  color: white;
+}
+
+
 /* qualification */
 .qualification__tabs{
   display: flex;
@@ -179,4 +188,15 @@
     padding: 3px; 
 }
 
+/* change theme */
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
 

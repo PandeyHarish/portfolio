@@ -22,15 +22,15 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
-<body class="body-font font-poppins scroll-smooth">
+<body class="body-font font-poppins">
     <!-- desktop navbar -->
 
-    <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  bg-white  py-4 z-10">
+    <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  py-4 z-10">
         <div class="ml-5">
             <p class=" text-right font-semibold text-2xl ">Harish .</p>
         </div>
 
-        <div class="mr-5">
+        <div class="mr-5 " id="nav">
             <ul>
                 <li class="inline  p-2 text-lg"><a href="#">Home</a></li>
                 <li class="inline  p-2 text-lg"><a href="#about">About</a></li>
@@ -38,7 +38,18 @@
                 <li class="inline  p-2 text-lg"><a href="#services">Services</a></li>
                 <li class="inline  p-2 text-lg"><a href="#portfolio">Portfolio</a></li>
                 <li class="inline  p-2 text-lg"><a href="#contact">Contact me</a></li>
-                <li class="inline  p-2 text-lg "><a href="#"><i class="ri-sun-line inline-block align-bottom"></i><i class="ri-moon-line inline-block align-bottom"></i> </a></li>
+                <!-- theme change button -->
+                <li class="inline  p-2 text-lg ">
+                    <a>
+                        <i class="ri-moon-line inline-block align-bottom " onclick="dark()" id="moon"></i>  
+                    </a>
+                    
+                </li>
+                <li class="inline  p-2 text-lg ">
+                    <a href="#">
+                        <i class="ri-sun-line inline-block align-bottom " onclick="light()" id="sun"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
@@ -561,6 +572,10 @@
             <p class="font-light text-sm">&copy;Harish pandey. All rights reserved</p>
         </div>
     </section>
+
+     <!-- goto top arrow -->
+     <i class="  ri-arrow-up-line bg-indigo-800 text-white px-3 py-1 text-lg font-bold rounded-md fixed bottom-16 right-5" onclick="gototop()" id="upbutton"></i>
+
     <!-- swiperjs -->
     <script src="assets/script/swiper-bundle.min.js"></script>
     <!-- js -->
