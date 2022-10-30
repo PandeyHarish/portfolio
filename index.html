@@ -17,7 +17,10 @@
 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 <body class="body-font font-poppins scroll-smooth">
     <!-- desktop navbar -->
@@ -341,7 +344,8 @@
     </section> 
     
     <!-- Services Section -->
-    <section class="mt-24 mx-44 p-10" id="services">
+    <span id="services"></span>
+    <section class="mt-24 mx-44 p-10" >
         <h1 class="font-bold text-4xl text-center">Services</h1>
         <h3 class="text-center text-lg opacity-75 ">What I Offer</h3>
         <div class="grid grid-cols-2 gap-5 mt-10">
@@ -390,13 +394,107 @@
    
 
     <!-- portfolio -->
-    <section>
-        
+    <i id="portfolio"></i>
+    <section class="mt-24 mx-32 portfolio section mb-20 " >
+        <h1 class="font-bold text-4xl text-center">Portfolio</h1>
+        <h3 class="text-center text-lg opacity-75 ">Most recent works</h3>
+
+        <div class="mt-20 swiper-container mySwiper">
+            <div class="swiper-wrapper mx-24">
+                <!-- postfolio 1 -->
+                <div class="flex m-2 swiper-slide">
+                    <img src="assets/images/portfolio1.jpg" class="h-44 object-cover rounded-md" alt="">
+                    <div class="pl-5">
+                        <h3 class="font-bold text-lg">Modern Website</h3>
+                        <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions.</p>
+                        <a href="https://pandeyharish.github.io/flex-start"  class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- postfolio 2 -->
+                <div class="flex m-2 swiper-slide">
+                    <img src="assets/images/portfolio2.jpg" class="h-44 object-cover rounded-md" alt="">
+                    <div class="pl-5">
+                        <h3 class="font-bold text-lg">Commercial Website</h3>
+                        <p class="mb-8 mr-44">Highly attractive site for commercail use like resturants. Website adaptable to all devices with ui components and animated interactions.</p>
+                        <a href="https://pandeyharish.github.io/grill" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- postfolio 3 -->
+                <div class="flex m-2 swiper-slide">
+                    <img src="assets/images/portfolio3.jpg" class="h-44 object-cover rounded-md" alt="">
+                    <div class="pl-5">
+                        <h3 class="font-bold text-lg">Education Website</h3>
+                        <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions. Specailly curated for education instutions.</p>
+                        <a href="https://pandeyharish.github.io/sikha" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- swiper arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- swiper pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
+    <!-- testimonials -->
+    <section class="mt-32 mb-20 " >
+        <h1 class="font-bold text-4xl text-center">Testimonials</h1>
+        <h3 class="text-center text-lg opacity-75 ">My clients saying</h3>
+        <div class="mt-10 swiper-container mySwiper1">
+            <div class="swiper-wrapper mx-auto w-[30rem] mb-8">
+                <!-- testimonial 1 -->
+                <div class=" m-2 swiper-slide p-5">
+                    <div class="flex">
+                        <img src="assets/images/testimonial1.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
+                        <div class="pl-5">
+                            <h3 class="font-bold text-lg">Loren</h3>
+                            <p class="mb-8 mr-44">Client</p>    
+                        </div>
+                    </div>
+                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                </div>
 
+                 <!-- testimonial 2 -->
+                 <div class=" m-2 swiper-slide p-5">
+                    <div class="flex">
+                        <img src="assets/images/testimonial2.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
+                        <div class="pl-5">
+                            <h3 class="font-bold text-lg">Henry</h3>
+                            <p class="mb-8 mr-44">Client</p>    
+                        </div>
+                    </div>
+                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                </div>
 
+                <!-- testimonial 3 -->
+                <div class=" m-2 swiper-slide p-5">
+                    <div class="flex">
+                        <img src="assets/images/testimonial3.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
+                        <div class="pl-5">
+                            <h3 class="font-bold text-lg">Matt</h3>
+                            <p class="mb-8 mr-44">Client</p>    
+                        </div>
+                    </div>
+                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                </div>
+            </div>
 
+            <!-- swiper pagination -->
+            <div class="swiper-pagination mt-5"></div>
+        </div>
+    </section>
+
+    <!-- Contact me  -->
+    <section >
+
+    </section>
+
+    <!-- swiperjs -->
+    <script src="assets/script/swiper-bundle.min.js"></script>
     <!-- js -->
     <Script src="assets/script/main.js"></Script>
     
