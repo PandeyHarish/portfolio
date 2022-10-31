@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- typed js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.2/typed.js" integrity="sha512-czS2hv7J6JWyaQyLkBm9/5POh0ADLqOn0Nutu0Pz2GeZyA6kMv7hIUGGvrF8F3ZyivBWMTjAttfZ1ye+V5ddgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="font-['Poppins']">
     <!-- desktop navbar -->
@@ -66,9 +68,9 @@
             <div class="">
                 <!-- heading intro -->
                 <h1 class="font-bold text-5xl">Hi, I am Harish</h1>
-                <div class="text-box p-0 pt-2 text-2xl typewriter">
-                    <h2 class=" font-semibold opacity-75" >Fullstack developer</h2>
-                </div>
+                <div class="container font-medium text-2xl">
+                    <h1><span class="auto-type"></span></h1>
+                </div>            
                 <h3 class="opacity-75 text-lg">High level experience in web design and development knowledge, producing quality works.</h3>
 
                 <div class="mt-16">
@@ -199,79 +201,81 @@
 
            <div class="qualification__sections ">
                  <!-- qualification contents 1 -->
-                <div class="qualification__content qualification__active mb-10" onclick="showeducation()" id="education">
+                 <div class="qualification__content qualification__active mb-10" onclick="showeducation()" id="education">
 
-                     <!-- Qualification 1 -->
-                    <div class="qualification__data">
-                        <div class="ml-[40rem]">
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="qualification__title font-bold">Diploma in computer </h3>
-                            <span class="qualification__subtitle">KU Multimedia</span>
-                            <div class="qualification__calender">
-                                <i class="ri-calendar-event-line inline-block align-bottom"></i> 
-                                2018
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Qualification 2 -->
-                    <div class="qualification__data ml-3">
-                        <div></div>
-                        <div class="">
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div class="ml-[-16rem]">
-                            <h3 class="qualification__title font-bold">General Management</h3>
-                                <span class="qualification__subtitle">Aroma English Secondary School</span>
-                                <div class="qualification__calender">
-                                    <i class="ri-calendar-event-line inline-block align-bottom"></i> 
-                                    2018-2020
-                                </div>
-                        </div>
-                    </div>
-                    
-
-                    <!-- Qualification 3 -->
-                    <div class="qualification__data ">
-                        <div></div>
-                        <div class="ml-3">
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        <div class="">
-                            <h3 class="qualification__title font-bold">BCA </h3>
-                            <span class="qualification__subtitle">Tirubhuvan University</span>
-                            <div class="qualification__calender">
-                                <i class="ri-calendar-event-line inline-block align-bottom"></i> 
-                                2020-2024
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-
-                    <!-- Qualification 4 -->
-                    <div class="qualification__data mr-[12.4rem]">
-                        <div></div>
-                        <div class="">
-                            <h3 class="qualification__title font-bold">Web Development </h3>
-                            <span class="qualification__subtitle">Bitmap I.T Solution</span>
-                            <div class="qualification__calender">
-                                <i class="ri-calendar-event-line inline-block align-bottom"></i> 
-                                2021-2022
-                            </div>
-                        </div>
-                        <div class="">
-                            <span class="qualification__rounder"></span>
-                            <!-- <span class="qualification__line"></span> -->
-                        </div>
-                    </div>
-                </div> 
+                    <!-- Qualification 1 -->
+                   <div class="qualification__data ml-[-14.5rem]">
+                       <div></div>
+                       <div class="">
+                           <h3 class="qualification__title font-bold">Diploma in computer </h3>
+                           <span class="qualification__subtitle">KU Multimedia</span>
+                           <div class="qualification__calender">
+                               <i class="ri-calendar-event-line inline-block align-bottom"></i> 
+                               2018
+                           </div>
+                       </div>
+                       <div class="">
+                           <span class="qualification__rounder"></span>
+                           <span class="qualification__line"></span>
+                       </div>
+                   </div>
+            
+                   <!-- Qualification 2 -->
+                   <div class="qualification__data ">
+                       <div></div>
+                       <div class="">
+                           <span class="qualification__rounder"></span>
+                           <span class="qualification__line"></span>
+                       </div>
+            
+                       <div class="">
+                           <h3 class="qualification__title font-bold">General Management</h3>
+                               <span class="qualification__subtitle">Aroma English Secondary School</span>
+                               <div class="qualification__calender">
+                                   <i class="ri-calendar-event-line inline-block align-bottom"></i> 
+                                   2018-2020
+                               </div>
+                       </div>
+                       
+                   </div>
+                   
+            
+                   <!-- Qualification 3 -->
+                   <div class="qualification__data ml-[-10.6rem]">
+                       <div></div>
+                       
+                       <div class="-ml-10">
+                           <h3 class="qualification__title font-bold">BCA </h3>
+                           <span class="qualification__subtitle">Tirubhuvan University</span>
+                           <div class="qualification__calender">
+                               <i class="ri-calendar-event-line inline-block align-bottom"></i> 
+                               2020-2024
+                           </div>
+                       </div>
+                       <div class="">
+                           <span class="qualification__rounder"></span>
+                           <span class="qualification__line"></span>
+                       </div>
+                   </div>
+            
+                   <!-- Qualification 4 -->
+                   <div class="qualification__data mr-[13rem]">
+                       <div></div>
+                       <div class="ml-[13.1rem]">
+                           <span class="qualification__rounder"></span>
+                           <!-- <span class="qualification__line"></span> -->
+                       </div>
+                       <div class="">
+                           <h3 class="qualification__title font-bold">Web Development </h3>
+                           <span class="qualification__subtitle">Bitmap I.T Solution</span>
+                           <div class="qualification__calender">
+                               <i class="ri-calendar-event-line inline-block align-bottom"></i> 
+                               2021-2022
+                           </div>
+                       </div>
+                       
+                   </div>
+               </div> 
 
                 <!-- qualification contents 2 -->
                 <div class="qualification__content mb-10"   id="work">

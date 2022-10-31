@@ -86,3 +86,11 @@ function dark() {
         moon.classList.remove('hidden');
     }
  }
+
+//  typing effect
+var typed = new Typed(".auto-type",{
+    strings: ["Fullstack Developer","Freelancer"],
+    typeSpeed: 80,
+    backSpeed: 80,
+    loop:true
+})
