@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harish</title>
     
-
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -19,12 +21,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- typed js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.2/typed.js" integrity="sha512-czS2hv7J6JWyaQyLkBm9/5POh0ADLqOn0Nutu0Pz2GeZyA6kMv7hIUGGvrF8F3ZyivBWMTjAttfZ1ye+V5ddgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl caurosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- wow js -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
-<body class="font-['Poppins']">
+<body class="font-['Poppins'] container">
     <!-- desktop navbar -->
 
     <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  py-4 z-10">
@@ -52,12 +62,11 @@
                 
         </div>
     </section>
-
     <!-- body -->
     <section class=" grid grid-cols-4">
         <div class="mt-40 mr-0 pr-0">
             <ul>
-                <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900 "><a href="#"><i class="ri-facebook-line"></i></a></li>
+                <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900 "><a href="https://www.facebook.com/bikash.pandey.7140497/" target="_blank"><i class="ri-facebook-line"></i></a></li>
                 <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900"><a href="#"><i class="ri-linkedin-line"></i></a></li>
                 <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900"><a href="#"><i class="ri-github-line"></i></a></li>
             </ul>
@@ -91,8 +100,8 @@
         <h1 class="font-bold text-4xl text-center">About me</h1>
         <h3 class="text-center text-lg opacity-75 ">My introduction</h3>
         <div class="grid grid-cols-2 gap-2 mt-10">
-            <div >
-                <img src="assets/images/20170101031438_IMG_9809 (1).jpg" alt="picture of man" class="rounded-2xl w-96">
+            <div class="">
+                <img src="assets/images/20170101031438_IMG_9809 (1).jpg" alt="picture of man" class="rounded-2xl w-96 ">
             </div>
 
             <div class="mt-20">
@@ -361,7 +370,7 @@
     <section class="mt-24 mx-44 p-10" >
         <h1 class="font-bold text-4xl text-center">Services</h1>
         <h3 class="text-center text-lg opacity-75 ">What I Offer</h3>
-        <div class="grid grid-cols-2 gap-5 mt-10">
+        <div class="flex justify-center gap-5 mt-10">
             <div class="shadow-md shadow-black w-44 h-48 p-5 rounded-sm">
                 <i class="ri-code-line text-purple-600 font-bold text-3xl"></i>
                 <p class="font-bold text-lg mb-5"> Frontend Development</p>
@@ -412,44 +421,37 @@
         <h1 class="font-bold text-4xl text-center">Portfolio</h1>
         <h3 class="text-center text-lg opacity-75 ">Most recent works</h3>
 
-        <div class="mt-20 swiper-container mySwiper">
-            <div class="swiper-wrapper mx-24">
+        <div class="mt-20 owl-carousel mx-24 ">
+           
                 <!-- postfolio 1 -->
-                <div class="flex m-2 swiper-slide">
+                <div class="item grid grid-cols-3 m-2">
                     <img src="assets/images/portfolio1.jpg" class="h-44 object-cover rounded-md" alt="">
-                    <div class="pl-5">
+                    <div class="pl-5 col-span-2">
                         <h3 class="font-bold text-lg">Modern Website</h3>
                         <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions.</p>
-                        <a href="https://pandeyharish.github.io/flex-start"  class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <a href="https://pandeyharish.github.io/flex-start" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
 
                 <!-- postfolio 2 -->
-                <div class="flex m-2 swiper-slide">
-                    <img src="assets/images/pexels-photo-262978.jpg" class="h-44 object-cover rounded-md" alt="">
-                    <div class="pl-5">
+                <div class="item grid grid-cols-3 m-2">
+                        <img src="assets/images/pexels-photo-262978.jpg" class="h-44 object-cover rounded-md" alt="">
+                    <div class="pl-5 col-span-2">
                         <h3 class="font-bold text-lg">Commercial Website</h3>
                         <p class="mb-8 mr-44">Highly attractive site for commercail use like resturants. Website adaptable to all devices with ui components and animated interactions.</p>
-                        <a href="https://pandeyharish.github.io/grill" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <a href="https://pandeyharish.github.io/grill" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
 
                 <!-- postfolio 3 -->
-                <div class="flex m-2 swiper-slide">
+                <div class="item  m-2 grid grid-cols-3">
                     <img src="assets/images/education.jpg" class="h-44 object-cover rounded-md" alt="">
-                    <div class="pl-5">
+                    <div class="pl-5 col-span-2">
                         <h3 class="font-bold text-lg">Education Website</h3>
                         <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions. Specailly curated for education instutions.</p>
-                        <a href="https://pandeyharish.github.io/sikha" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <a href="https://pandeyharish.github.io/sikha" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
-            </div>
-            <!-- swiper arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-            <!-- swiper pagination -->
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -457,47 +459,49 @@
     <section class="mt-32 mb-20 " >
         <h1 class="font-bold text-4xl text-center">Testimonials</h1>
         <h3 class="text-center text-lg opacity-75 ">My clients saying</h3>
-        <div class="mt-10 swiper-container mySwiper1">
-            <div class="swiper-wrapper mx-auto w-[30rem] mb-8">
+        <div class="mt-10 ">
+            <div class="owl-carousel mx-auto w-[44rem] mb-8">
                 <!-- testimonial 1 -->
-                <div class=" m-2 swiper-slide p-5">
-                    <div class="flex">
-                        <img src="assets/images/testimonial1.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
-                        <div class="pl-5">
+                <div class=" m-2 item p-5">
+                    <div class="grid grid-cols-3 gap-1">
+                        <img src="assets/images/testimonial1.jpg" class=" object-cover rounded-lg" alt="picture of a man">
+                        <div class="pl-5 col-span-2">
                             <h3 class="font-bold text-lg">Loren</h3>
-                            <p class="mb-8 mr-44">Client</p>    
+                            <p class="mb-8 mr-44">Client</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
-                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                    
                 </div>
 
                  <!-- testimonial 2 -->
-                 <div class=" m-2 swiper-slide p-5">
-                    <div class="flex">
-                        <img src="assets/images/testimonial2.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
-                        <div class="pl-5">
+                 <div class=" m-2 item p-5">
+                    <div class="grid grid-cols-3 gap-1">
+                        <img src="assets/images/testimonial2.jpg" class=" object-cover rounded-lg" alt="picture of a man">
+                        <div class="pl-5 col-span-2">
                             <h3 class="font-bold text-lg">Henry</h3>
-                            <p class="mb-8 mr-44">Client</p>    
+                            <p class="mb-8 mr-44">Client</p>
+                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
-                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                    
                 </div>
 
                 <!-- testimonial 3 -->
-                <div class=" m-2 swiper-slide p-5">
-                    <div class="flex">
-                        <img src="assets/images/testimonial3.jpg" class="h-20 object-cover rounded-full" alt="picture of a man">
-                        <div class="pl-5">
+                <div class=" m-2 item p-5">
+                    <div class="grid grid-cols-3 gap-1">
+                        <img src="assets/images/testimonial3.jpg" class="  object-cover rounded-lg" alt="picture of a man">
+                        <div class="pl-5 col-span-2">
                             <h3 class="font-bold text-lg">Matt</h3>
-                            <p class="mb-8 mr-44">Client</p>    
+                            <p class="mb-8 mr-44">Client</p>
+                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
-                    <p class="w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>
+                    
                 </div>
-            </div>
+          
 
-            <!-- swiper pagination -->
-            <div class="swiper-pagination mt-5"></div>
+            
         </div>
     </section>
 
@@ -550,7 +554,7 @@
 
 
     <!-- footer section -->
-    <section class="bg-blue-800 h-72">
+    <section class="bg-blue-800 h-72 absolute right-0 left-0">
         <div class="grid grid-cols-3 mx-36">
             <div class="mt-20 text-white">
                 <h1 class="font-bold text-3xl">Harish Pandey</h1>
@@ -565,7 +569,7 @@
                 </p>
             </div>
 
-            <div class="mt-20 ml-5">
+            <div class="mt-20 ml-5 w-[100%]">
                 <a href="" class="text-white text-2xl"> <i class="ri-instagram-line"></i></a>
                 <a href="" class="text-white text-2xl"> <i class="ri-facebook-line"></i></a>
                 <a href="" class="text-white text-2xl"> <i class="ri-linkedin-line"></i></a>
@@ -577,10 +581,34 @@
     </section>
 
      <!-- goto top arrow -->
-     <i class="  ri-arrow-up-line bg-indigo-800 text-white px-3 py-1 text-lg font-bold rounded-md fixed bottom-16 right-5" onclick="gototop()" id="upbutton"></i>
-
+     <i class="cursor-pointer  ri-arrow-up-line bg-indigo-800 text-white px-3 py-1 text-lg font-bold rounded-md fixed bottom-16 right-5" onclick="gototop()" id="upbutton"></i>
+<script>
+    $('.owl-carousel').owlCarousel({
+    items:1,
+    margin:10,
+    autoHeight:true,
+    autoplay:true,
+    loop:true,
+    autoplayTimeout:2000,
+    dots:false,
+    autoplayHoverPause:true,
+})
+            $('.play').on('click',function(){
+                owl.trigger('play.owl.autoplay',[1000])
+            })
+            $('.stop').on('click',function(){
+                owl.trigger('stop.owl.autoplay')
+            })
+</script>
+    <script>
+         new WOW().init();
+    </script>
     <!-- swiperjs -->
     <script src="assets/script/swiper-bundle.min.js"></script>
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- wowjs -->
+    <script src="js/wow.min.js"></script>
     <!-- js -->
     <Script src="assets/script/main.js"></Script>
     

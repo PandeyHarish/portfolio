@@ -71,21 +71,47 @@ let swiper = new Swiper(".mySwiper,.mySwiper1", {
         }
 
 // dark light theme
+
 var sun = document.getElementById('sun');
 var moon = document.getElementById('moon');
 sun.classList.add('hidden');
+// function to set a given theme/color-scheme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
 function dark() {   
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    if(sun.classList.contains('hidden')){
-        moon.classList.add('hidden');
-        sun.classList.remove('hidden');
-    }
-    else{
-        sun.classList.add('hidden');
-        moon.classList.remove('hidden');
-    }
+     if (localStorage.getItem('theme') === 'theme-dark') {
+    setTheme('theme-light');
+    moon.style.display = 'block'
+    sun.style.display = 'none'
+    } else {
+    setTheme('theme-dark');
+    sun.style.display = 'block'
+    moon.style.display = 'none'
+}
  }
+ // Immediately invoked function to set the theme on initial load
+ (function () {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+
+    } else {
+        setTheme('theme-light');
+    }
+})();
+
+
+//  document.getElementById('moon').style.display = 'none';
+        
+
+//         // function to toggle between light and dark theme
+//         function toggleTheme() {
+           
+//         }
+
+        
+
 
 //  typing effect
 var typed = new Typed(".auto-type",{
@@ -94,3 +120,5 @@ var typed = new Typed(".auto-type",{
     backSpeed: 80,
     loop:true
 })
+
+// owl caurosel

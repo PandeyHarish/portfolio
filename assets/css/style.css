@@ -166,7 +166,19 @@
 }
 
 /* change theme */
-.change-theme{
+.theme-light {
+  --color-secondary: #fbfbfe;
+  --font-color: #000000;
+}
+.theme-dark {
+  --color-secondary: rgb(28, 22, 65);
+  --font-color: #ffffff;
+}
+.container {
+  background: var(--color-secondary);
+  color: var(--font-color);
+}
+/* .change-theme{
   font-size: 1.25rem;
   color: var(--title-color);
   margin-right: var(--mb-1);
@@ -175,5 +187,5 @@
 
 .change-theme:hover{
   color: var(--first-color);
-}
+} */
 
