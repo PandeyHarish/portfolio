@@ -83,16 +83,12 @@ function setTheme(themeName) {
 function dark() {   
      if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-light');
-    // moon.style.display = 'block'
-    // sun.style.display = 'none'
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
     } else {
     setTheme('theme-dark');
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
-    // sun.style.display = 'block'
-    // moon.style.display = 'none'
 }
  }
  // Immediately invoked function to set the theme on initial load
@@ -106,14 +102,6 @@ function dark() {
 })();
 
 
-//  document.getElementById('moon').style.display = 'none';
-        
-
-//         // function to toggle between light and dark theme
-//         function toggleTheme() {
-           
-//         }
-
         
 
 
@@ -124,5 +112,3 @@ var typed = new Typed(".auto-type",{
     backSpeed: 80,
     loop:true
 })
-
-// owl caurosel
