@@ -71,7 +71,6 @@ let swiper = new Swiper(".mySwiper,.mySwiper1", {
         }
 
 // dark light theme
-
 var sun = document.getElementById('sun');
 var moon = document.getElementById('moon');
 sun.classList.add('hidden');
