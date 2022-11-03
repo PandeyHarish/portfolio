@@ -83,12 +83,16 @@ function setTheme(themeName) {
 function dark() {   
      if (localStorage.getItem('theme') === 'theme-dark') {
     setTheme('theme-light');
-    moon.style.display = 'block'
-    sun.style.display = 'none'
+    // moon.style.display = 'block'
+    // sun.style.display = 'none'
+    sun.classList.toggle('hidden');
+    moon.classList.toggle('hidden');
     } else {
     setTheme('theme-dark');
-    sun.style.display = 'block'
-    moon.style.display = 'none'
+    sun.classList.toggle('hidden');
+    moon.classList.toggle('hidden');
+    // sun.style.display = 'block'
+    // moon.style.display = 'none'
 }
  }
  // Immediately invoked function to set the theme on initial load
