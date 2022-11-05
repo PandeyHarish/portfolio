@@ -70,7 +70,9 @@
 }
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 .dark-mode{
   background-color: rgb(28, 22, 65);
