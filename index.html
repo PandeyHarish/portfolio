@@ -39,36 +39,63 @@
 
 </head>
 <body class="font-['Poppins'] container">
-    <!-- desktop navbar -->
-
     <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  py-4 z-10">
-        <div class="ml-5 -mt-2 font-[Tangerine] ">
-            <p class=" text-right font-extrabold  text-[44px] ">Harish .</p>
-        </div>
+    <!-- desktop navbar -->
+        <nav class=" hidden sm:block">
+            <div class="ml-5 -mt-2 font-[Tangerine] ">
+                <p class=" text-right font-extrabold  text-[44px] ">Harish .</p>
+            </div>
+    
+            <div id="nav">
+                <ul>
+                    <li class="inline  p-2 text-lg"><a href="#">Home</a></li>
+                    <li class="inline  p-2 text-lg"><a href="#about">About</a></li>
+                    <li class="inline  p-2 text-lg"><a href="#skills">Skills</a></li>
+                    <li class="inline  p-2 text-lg"><a href="#services">Services</a></li>
+                    <li class="inline  p-2 text-lg"><a href="#portfolio">Portfolio</a></li>
+                    <li class="inline  p-2 text-lg"><a href="#contact">Contact me</a></li>
+                    <!-- theme change button -->
+                    <li class="inline  p-2 text-lg ">
+                        <a  onclick="dark()" class="cursor-pointer" id="moon">
+                            <i class="ri-moon-line inline-block align-bottom "  ></i>  
+                        </a>
+                        <a  onclick="dark()" class="cursor-pointer" id="sun">
+                            <i class="ri-sun-line inline-block align-bottom " ></i>
+                        </a>
+                    </li>
+                    
+            </div>
+        </nav>
 
-        <div id="nav">
-            <ul>
-                <li class="inline  p-2 text-lg"><a href="#">Home</a></li>
-                <li class="inline  p-2 text-lg"><a href="#about">About</a></li>
-                <li class="inline  p-2 text-lg"><a href="#skills">Skills</a></li>
-                <li class="inline  p-2 text-lg"><a href="#services">Services</a></li>
-                <li class="inline  p-2 text-lg"><a href="#portfolio">Portfolio</a></li>
-                <li class="inline  p-2 text-lg"><a href="#contact">Contact me</a></li>
-                <!-- theme change button -->
-                <li class="inline  p-2 text-lg ">
-                    <a href="#" onclick="dark()" id="moon">
-                        <i class="ri-moon-line inline-block align-bottom "  ></i>  
-                    </a>
-                    <a href="#" onclick="dark()" id="sun">
-                        <i class="ri-sun-line inline-block align-bottom " ></i>
-                    </a>
-                </li>
-                
-        </div>
+         <!-- mobile nav -->
+            <nav class="sticky -mt-1 z-20 w-full px-4 text-white bg-transparent sm:hidden" id="mobinav">
+                <div class="px-4  ">
+                    <div class="flex justify-between">
+                        <h1 class=" font-bold text-base sm:text-xl text-white font-[Tangerine]">Harish .</h1>
+                        <p class="text-2xl" onclick="mobNav()">
+                            <i class="ri-menu-line cursor-pointer" id="mnavo"></i>
+                            <i class="ri-close-line cursor-pointer" id="mnavc"></i>
+                        </p>
+                    </div>
+                    <div  id="mobnav" class="text-2xl p-4 fixed bg-gray-600 bg-opacity-80 top-14  left-0 pt-1 w-[50%] rounded-lg" >
+                        <ul>
+                            <li class="p-2"><a href="#" onclick="mobNav()" class="text-xl ">Home</a></li>
+                            <li class="p-2"><a href="#about" onclick="mobNav()" class="text-xl ">About</a></li>
+                            <li class="p-2"><a href="#skills" onclick="mobNav()" class="text-xl ">Skills</a></li>
+                            <li class="p-2"><a href="#services" onclick="mobNav()" class="text-xl ">Services</a></li>
+                            <li class="p-2"><a href="#portfolio" onclick="mobNav()" class="text-xl ">Portfolio</a></li>
+                            <li class="p-2"><a href="#contact" onclick="mobNav()" class="text-xl ">Contact me</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
     </section>
+   
+
     <!-- body -->
     <section class=" grid grid-cols-4">
-        <div class="mt-40 mr-0 pr-0">
+        <div class="mt-40 mr-0 pr-0 ">
             <ul>
                 <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900 "><a href="https://www.facebook.com/bikash.pandey.7140497/" target="_blank"><i class="ri-facebook-line"></i></a></li>
                 <li class="p-2 text-2xl pl-10 text-purple-800 hover:text-purple-900"><a href="#"><i class="ri-linkedin-line"></i></a></li>
@@ -77,46 +104,46 @@
         </div>
 
 
-        <div class="col-span-3 mt-32 grid grid-cols-2 -ml-36">
-            <div class="">
+        <div class="col-span-3 mt-10 md:mt-32 flex flex-col md:flex-row ml-10 lg:-ml-36">
+            <div class="w-full">
                 <!-- heading intro -->
-                <h1 class="font-bold text-5xl">Hi, I am Harish</h1>
-                <div class="container font-medium text-2xl">
+                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl">Hi, I am Harish</h1>
+                <div class="container font-medium text-sm sm:text-base md:text-2xl">
                     <h1><span class="auto-type"></span></h1>
                 </div>            
-                <h3 class="opacity-75 text-lg">High level experience in web design and development knowledge, producing quality works.</h3>
+                <h3 class="opacity-75 text-sm sm:text-base md:text-lg">With High level experience in web design and development knowledge, producing quality works.</h3>
 
-                <div class="mt-16">
-                    <a href="#contact" class=" text-white bg-blue-500 hover:bg-blue-700 px-12 py-6 rounded-lg text-xl">Contact me <i class="ri-send-plane-2-fill pl-3 inline-block align-bottom"></i></a>
+                <div class="mt-5 sm:mt-8 md:mt-16 mb-1">
+                    <a href="#contact" class=" text-white bg-blue-500 hover:bg-blue-700 px-3 py-2 sm:px-6 sm:py-3 md:px-12 md:py-6 rounded-md md:rounded-lg text-sm sm:text-base md:text-xl">Contact me <i class="ri-send-plane-2-fill pl-3 inline-block align-bottom"></i></a>
                 </div>
             </div>
 
             <!-- bio image -->
-            <div class="blob"> 
-                <img src="assets/images/20170101031622_IMG_9812-removebg-preview.png" alt="picture of a man standing"  class="ml-14 mt-5 w-[280px] h-[350px] object-cover">
+            <div class=" ml-0 mt-2 w-full"> 
+                <img src="assets/images/Untitled-1.png" alt="picture of a man standing"  class=" w-[450px] md:w-[400px]">
             </div>
         </div>
     </section>
 
     <!-- about  me -->
 
-    <section class="mt-10 p-16 mx-44" id="about">
-        <h1 class="font-bold text-4xl text-center">About me</h1>
-        <h3 class="text-center text-lg opacity-75 ">My introduction</h3>
+    <section class="mt-10 p-16 mx-5 sm:mx-24 md:mx-32 lg:mx-44 " id="about">
+        <h1 class="font-bold text-xl sm:text-2xl md:text-4xl text-center">About me</h1>
+        <h3 class="text-center text-sm sm:text-base md:text-lg opacity-75 ">My introduction</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-10">
             <div class="wow animate__animated animate__zoomIn">
                 <img src="assets/images/20170101031438_IMG_9809 (1).jpg" alt="picture of man" class="rounded-2xl md:w-96 ">
             </div>
 
-            <div class="mt-20 ">
-                <h3 class=" text-xl opacity-70 ">Web developer with extensive knowledge and years of experience working in web technologies and delivering quality work.</h3>
-                <div class="flex justify-between mt-5 text-center">
-                    <p><span class="font-bold text-3xl">03+</span><br> years experience</p>
-                    <p><span class="font-bold text-3xl">05+</span><br> completed projects</p>
-                    <p><span class="font-bold text-3xl">03+</span><br> comapnies worked</p>
+            <div class="mt-5 sm:mt-20 ">
+                <h3 class="text-sm sm:text-lg md:text-xl opacity-70 ">Web developer with extensive knowledge and years of experience working in web technologies and delivering quality work.</h3>
+                <div class="flex justify-evenly mt-5 text-center">
+                    <p class="text-lg sm:text-base"><span class="font-bold text-lg md:text-3xl">03+</span><br> years experience</p>
+                    <p class="text-lg sm:text-base"><span class="font-bold text-lg md:text-3xl">05+</span><br> completed projects</p>
+                    <p class="text-lg sm:text-base"><span class="font-bold text-lg md:text-3xl">03+</span><br> comapnies worked</p>
                 </div>
                 <div class="mt-16 text-center wow animate__animated animate__zoomIn">
-                    <a href="assets/pdf/Are-juveniles-jubilat.pdf" class=" text-white bg-purple-700 hover:bg-purple-900 px-12 py-6 rounded-lg text-xl">Download cv <i class="ri-download-2-line pl-3 inline-block align-bottom"></i></a>
+                    <a href="assets/pdf/Are-juveniles-jubilat.pdf" class=" text-white bg-purple-700 hover:bg-purple-900 px-3 py-2 sm:px-6 sm:py-3 md:px-12 md:py-6 rounded-md md:rounded-lg text-sm sm:text-base md:text-xl">Download cv <i class="ri-download-2-line pl-3 inline-block align-bottom"></i></a>
                 </div>
             </div>
         </div>
@@ -378,13 +405,13 @@
             <div class="shadow-md shadow-black w-44 h-48 p-5 rounded-sm">
                 <i class="ri-code-line text-purple-600 font-bold text-3xl"></i>
                 <p class="font-bold text-lg mb-5"> Frontend Development</p>
-                <a href="#" class="text-purple-600 font-normal text-base" onclick="open0()">View more  <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                <a  class="text-purple-600 font-normal text-base cursor-pointer" onclick="open0()">View more  <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
             </div>
 
             <div class="shadow-md shadow-black w-44 h-48 p-5 rounded-sm">
                 <i class="ri-database-2-line text-purple-600 font-bold text-3xl"></i>
                 <p class="font-bold text-lg mb-5">Backend Development</p>
-                <a href="#" class="text-purple-600 font-normal text-base mt-5" onclick="open1()">View more  <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                <a  class="text-purple-600 font-normal text-base mt-5 cursor-pointer" onclick="open1()">View more  <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
             </div>
         </div>
         <!-- frontend modal -->
@@ -421,58 +448,60 @@
 
     <!-- portfolio -->
     <i id="portfolio"></i>
-    <section class="mt-24 mx-32 portfolio section mb-20 " >
+    <section class="mt-24 mx-5 sm:mx-12 md:mx-32 portfolio section mb-20 " >
         <h1 class="font-bold text-xl sm:text-2xl md:text-4xl text-center">Portfolio</h1>
         <h3 class="text-center text-sm sm:text-base md:text-lg opacity-75 ">Most recent works</h3>
 
-        <div class="mt-20 owl-carousel mx-24 ">
+        <div class="mt-8 sm:mt-15 md:mt-20 owl-carousel">
            
                 <!-- postfolio 1 -->
-                <div class="item grid grid-cols-3 m-2">
-                    <img src="assets/images/portfolio1.jpg" class="h-44 object-cover rounded-md" alt="">
+                <div class="item grid grid-cols-3">
+                    <img src="assets/images/thumbss01.jpg" class="w-16 sm:w-24 md:w-24 object-cover rounded-md" alt="">
                     <div class="pl-5 col-span-2">
-                        <h3 class="font-bold text-lg">Modern Website</h3>
-                        <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions.</p>
-                        <a href="https://pandeyharish.github.io/flex-start" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <h3 class="font-bold text-sm sm:text-base md:text-lg">Modern Website</h3>
+                        <p class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Website adaptable to all devices with ui components and animated interactions.</p>
+                        <a href="https://pandeyharish.github.io/flex-start" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md text-xs sm:text-sm md:text-base">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
 
                 <!-- postfolio 2 -->
-                <div class="item grid grid-cols-3 m-2">
-                        <img src="assets/images/pexels-photo-262978.jpg" class="h-44 object-cover rounded-md" alt="">
+                <div class="item grid grid-cols-3">
+                    <img src="assets/images/pexels-photo-262978.jpg" class="w-16 sm:w-24 md:w-24 object-cover rounded-md" alt="">
                     <div class="pl-5 col-span-2">
-                        <h3 class="font-bold text-lg">Commercial Website</h3>
-                        <p class="mb-8 mr-44">Highly attractive site for commercail use like resturants. Website adaptable to all devices with ui components and animated interactions.</p>
-                        <a href="https://pandeyharish.github.io/grill" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <h3 class="font-bold text-sm sm:text-base md:text-lg">Commercial Website</h3>
+                        <p class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Highly attractive site for commercail use like resturants. Website adaptable to all devices </p>
+                        <a href="https://pandeyharish.github.io/grill" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md text-xs sm:text-sm md:text-base">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
 
                 <!-- postfolio 3 -->
                 <div class="item  m-2 grid grid-cols-3">
-                    <img src="assets/images/education.jpg" class="h-44 object-cover rounded-md" alt="">
+                    <img src="assets/images/education.jpg" class="w-16 sm:w-24 md:w-24 object-cover rounded-md" alt="">
                     <div class="pl-5 col-span-2">
-                        <h3 class="font-bold text-lg">Education Website</h3>
-                        <p class="mb-8 mr-44">Website adaptable to all devices with ui components and animated interactions. Specailly curated for education instutions.</p>
-                        <a href="https://pandeyharish.github.io/sikha" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
+                        <h3 class="font-bold text-sm sm:text-base md:text-lg">Education Website</h3>
+                        <p class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Website adaptable to all devices with ui components and animated interactions. </p>
+                        <a href="https://pandeyharish.github.io/sikha" target="_blank" class=" px-2 py-1 bg-blue-700 hover:bg-blue-800 text-white rounded-md text-xs sm:text-sm md:text-base">Demo <i class="ri-arrow-right-line inline-block align-bottom"></i></a>
                     </div>
                 </div>
         </div>
     </section>
 
     <!-- testimonials -->
-    <section class="mt-32 mb-20 " >
+    <section class="mt-32 mb-20 mx-2 sm:mx-14 md:mx-24 lg:mx-32 " >
         <h1 class="font-bold text-xl sm:text-2xl md:text-4xl text-center">Testimonials</h1>
         <h3 class="text-center text-sm sm:text-base md:text-lg opacity-75 ">My clients saying</h3>
         <div class="mt-10 ">
-            <div class="owl-carousel mx-auto w-[44rem] mb-8">
+            <div class="owl-carousel  mb-8">
                 <!-- testimonial 1 -->
                 <div class=" m-2 item p-5">
-                    <div class="grid grid-cols-3 gap-1">
-                        <img src="assets/images/testimonial1.jpg" class=" object-cover rounded-lg" alt="picture of a man">
-                        <div class="pl-5 col-span-2">
-                            <h3 class="font-bold text-lg">Loren</h3>
-                            <p class="mb-8 mr-44">Client</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
+                    <div class="grid grid-cols-3">
+                        <div class="w-28 sm:w-36 md:w-48 lg:w-60">
+                            <img src="assets/images/testimonial1.jpg" class=" object-cover rounded-lg" alt="picture of a man">
+                       </div>
+                        <div class="pl-6 md:pl-3 lg:pl-2 col-span-2">
+                            <h3 class="font-bold text-sm sm:text-base md:text-lg">Loren</h3>
+                            <p class="text-xs sm:text-sm md:text-base lg:text-lg">Client</p>
+                            <p class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
                     
@@ -480,12 +509,14 @@
 
                  <!-- testimonial 2 -->
                  <div class=" m-2 item p-5">
-                    <div class="grid grid-cols-3 gap-1">
-                        <img src="assets/images/testimonial2.jpg" class=" object-cover rounded-lg" alt="picture of a man">
-                        <div class="pl-5 col-span-2">
-                            <h3 class="font-bold text-lg">Henry</h3>
-                            <p class="mb-8 mr-44">Client</p>
-                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
+                    <div class="grid grid-cols-3">
+                        <div class="w-28 sm:w-36 md:w-48 lg:w-60">
+                             <img src="assets/images/testimonial2.jpg" class=" object-cover rounded-lg" alt="picture of a man">
+                        </div>
+                        <div class="pl-6  md:pl-5 lg:pl-2 col-span-2">
+                            <h3 class="font-bold text-sm sm:text-base md:text-lg">Henry</h3>
+                            <p class="text-xs sm:text-sm md:text-base lg:text-lg">Client</p>
+                            <p  class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
                     
@@ -493,12 +524,14 @@
 
                 <!-- testimonial 3 -->
                 <div class=" m-2 item p-5">
-                    <div class="grid grid-cols-3 gap-1">
-                        <img src="assets/images/testimonial3.jpg" class="  object-cover rounded-lg" alt="picture of a man">
-                        <div class="pl-5 col-span-2">
-                            <h3 class="font-bold text-lg">Matt</h3>
-                            <p class="mb-8 mr-44">Client</p>
-                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
+                    <div class="grid grid-cols-3">
+                        <div class="w-28 sm:w-36 md:w-48 lg:w-60">
+                            <img src="assets/images/testimonial2.jpg" class=" object-cover rounded-lg" alt="picture of a man">
+                       </div>
+                        <div class="pl-6 md:pl-3 lg:pl-2 col-span-2">
+                            <h3 class="font-bold text-sm sm:text-base md:text-lg">Matt</h3>
+                            <p class="text-xs sm:text-sm md:text-base lg:text-lg">Client</p>
+                            <p  class="mb-1 sm:mb-2 md:mb-4 lg:mb-10 text-xs sm:text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem eaque soluta ullam ipsum asperiores nam nemo qui eius omnis?</p>    
                         </div>
                     </div>
                     
