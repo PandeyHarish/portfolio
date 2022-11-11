@@ -39,9 +39,9 @@
 
 </head>
 <body class="font-['Poppins'] container">
-    <section class="flex justify-between sticky top-0 left-0 right-0 shadow-sm  py-4 z-10">
+    <section class=" sticky top-0 left-0 right-0 shadow-sm  py-4 z-10 hidden sm:block">
     <!-- desktop navbar -->
-        <nav class=" hidden sm:block">
+        <nav class="flex justify-between ">
             <div class="ml-5 -mt-2 font-[Tangerine] ">
                 <p class=" text-right font-extrabold  text-[44px] ">Harish .</p>
             </div>
@@ -67,31 +67,44 @@
             </div>
         </nav>
 
-         <!-- mobile nav -->
-            <nav class="sticky -mt-1 z-20 w-full px-4 text-white bg-transparent sm:hidden" id="mobinav">
-                <div class="px-4  ">
-                    <div class="flex justify-between">
-                        <h1 class=" font-bold text-base sm:text-xl text-white font-[Tangerine]">Harish .</h1>
-                        <p class="text-2xl" onclick="mobNav()">
-                            <i class="ri-menu-line cursor-pointer" id="mnavo"></i>
-                            <i class="ri-close-line cursor-pointer" id="mnavc"></i>
-                        </p>
-                    </div>
-                    <div  id="mobnav" class="text-2xl p-4 fixed bg-gray-600 bg-opacity-80 top-14  left-0 pt-1 w-[50%] rounded-lg" >
-                        <ul>
-                            <li class="p-2"><a href="#" onclick="mobNav()" class="text-xl ">Home</a></li>
-                            <li class="p-2"><a href="#about" onclick="mobNav()" class="text-xl ">About</a></li>
-                            <li class="p-2"><a href="#skills" onclick="mobNav()" class="text-xl ">Skills</a></li>
-                            <li class="p-2"><a href="#services" onclick="mobNav()" class="text-xl ">Services</a></li>
-                            <li class="p-2"><a href="#portfolio" onclick="mobNav()" class="text-xl ">Portfolio</a></li>
-                            <li class="p-2"><a href="#contact" onclick="mobNav()" class="text-xl ">Contact me</a></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </nav>
+         
     </section>
-   
+   <section>
+    <!-- mobile nav -->
+    <nav class="sticky mt-2 z-20 w-full px-4  bg-transparent sm:hidden" id="mobinav">
+        <div class="px-4  ">
+            <div class="flex justify-between">
+                <h1 class=" font-bold text-base sm:text-xl  font-[Tangerine]">Harish .</h1>
+                <p class="text-2xl" onclick="mobNav()">
+                    <i class="ri-menu-line cursor-pointer" id="mnavo"></i>
+                    <i class="ri-close-line cursor-pointer" id="mnavc"></i>
+                </p>
+            </div>
+            <div  id="mobnav" class="text-2xl p-4 fixed bg-gray-600 bg-opacity-80 top-14  left-0 pt-1 w-[50%] rounded-lg" >
+                <ul>
+                    <li class="text-lg text-right">
+                        <a  onclick="dark()" class="cursor-pointer " id="moon1">
+                            <i class="ri-moon-line inline-block align-bottom "  ></i>  
+                        </a>
+                        <a  onclick="dark()" class="cursor-pointer" id="sun1">
+                            <i class="ri-sun-line inline-block align-bottom " ></i>
+                        </a>
+                    </li>
+                    <li class="p-2" >
+                        <a href="#" onclick="mobNav()" class="text-xl ">Home</a>
+                        
+                    </li>
+                    <li class="p-2"><a href="#about" onclick="mobNav()" class="text-xl ">About</a></li>
+                    <li class="p-2"><a href="#skills" onclick="mobNav()" class="text-xl ">Skills</a></li>
+                    <li class="p-2"><a href="#services" onclick="mobNav()" class="text-xl ">Services</a></li>
+                    <li class="p-2"><a href="#portfolio" onclick="mobNav()" class="text-xl ">Portfolio</a></li>
+                    <li class="p-2"><a href="#contact" onclick="mobNav()" class="text-xl ">Contact me</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+   </section>
 
     <!-- body -->
     <section class=" grid grid-cols-4">

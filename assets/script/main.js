@@ -74,6 +74,9 @@ let swiper = new Swiper(".mySwiper,.mySwiper1", {
 var sun = document.getElementById('sun');
 var moon = document.getElementById('moon');
 sun.classList.add('hidden');
+var sun1 = document.getElementById('sun');
+var moon1 = document.getElementById('moon');
+sun1.classList.add('hidden');
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -84,10 +87,14 @@ function dark() {
     setTheme('theme-light');
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
+    sun1.classList.toggle('hidden');
+    moon1.classList.toggle('hidden');
     } else {
     setTheme('theme-dark');
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
+    sun1.classList.toggle('hidden');
+    moon1.classList.toggle('hidden');
 }
  }
  // Immediately invoked function to set the theme on initial load
