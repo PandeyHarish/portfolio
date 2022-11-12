@@ -28,24 +28,6 @@ function close0(){
     document.getElementById('modal1').style.display = 'none'
 }
 
-// swiper
-let swiper = new Swiper(".mySwiper,.mySwiper1", {
-    cssMode: true,
-    loop:true,
-    autoplay:{
-        delay: 5000,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
 
 //   Show scroll top
         var upbutton = document.getElementById('upbutton');
