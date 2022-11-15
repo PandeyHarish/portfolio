@@ -56,9 +56,19 @@ function close0(){
 var sun = document.getElementById('sun');
 var moon = document.getElementById('moon');
 sun.classList.add('hidden');
-// var sun1 = document.getElementById('sun');
-// var moon1 = document.getElementById('moon');
-// sun1.classList.add('hidden');
+
+// checks for theme
+// const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+// if (darkThemeMq.matches) {
+  // Theme set to dark.
+// } else {
+  // Theme set to light.
+// }
+
+
+var sun1 = document.getElementById('sun1');
+var moon1 = document.getElementById('moon1');
+sun1.classList.add('hidden');
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -69,14 +79,14 @@ function dark() {
     setTheme('theme-light');
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
-    // sun1.classList.toggle('hidden');
-    // moon1.classList.toggle('hidden');
+    sun1.classList.toggle('hidden');
+    moon1.classList.toggle('hidden');
     } else {
     setTheme('theme-dark');
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
-    // sun1.classList.toggle('hidden');
-    // moon1.classList.toggle('hidden');
+    sun1.classList.toggle('hidden');
+    moon1.classList.toggle('hidden');
 }
  }
  // Immediately invoked function to set the theme on initial load
@@ -88,6 +98,7 @@ function dark() {
         setTheme('theme-light');
     }
 })();
+
 //  mobile nav
 var mnav=document.getElementById('mobnav');
             var mnavo=document.getElementById('mnavo');
