@@ -158,6 +158,29 @@ html{
     padding: 3px; 
 }
 
+.wi_45{
+    width: 45%;
+}
+
+.wi_70{
+    width: 70%;
+}
+
+.wi_50{
+    width: 50%;
+}
+
+.wi_55{
+    width: 55%;
+}
+
+.wi_85{
+    width: 85%;
+}
+.wi_90{
+    width: 90%;
+}
+
 /* change theme */
 .theme-light {
   --color-secondary: #fbfbfe;

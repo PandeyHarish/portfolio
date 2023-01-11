@@ -886,6 +886,22 @@ video {
   width: 7rem;
 }
 
+.w-\[7\%\] {
+  width: 7%;
+}
+
+.w-\[77\%\] {
+  width: 77%;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[8\%\] {
+  width: 8%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
