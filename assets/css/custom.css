@@ -180,7 +180,12 @@ html{
 .wi_90{
     width: 90%;
 }
-
+.wi_80{
+    width: 80%;
+}
+.wi_35{
+    width: 35%;
+}
 /* change theme */
 .theme-light {
   --color-secondary: #fbfbfe;
