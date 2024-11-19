@@ -143,7 +143,7 @@
       <img class="me" src="assets/images/me.png" alt="Me" style="height: 200px; object-fit: cover" />
       <h2 class="email" style="font-size: 20px">pandeyharish394@gamil.com</h2>
       <h2 class="address">Bharatpur-4,Chitwan</h2>
-      <p class="copyright">&copy; 2022 Harish. All Rights Reserved</p>
+      <p class="copyright">&copy; <span id="copyright"></span> Harish. All Rights Reserved</p>
       <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
         <li>
           <a href="https://www.linkedin.com/in/harish-k-pandey/" target="_blank"><i class="lab la-linkedin"></i></a>
@@ -171,10 +171,10 @@
             <img class="me" src="assets/images/me.png" alt="Me" />
             <h2 class="email" style="font-size: 20px">pandeyharish394@gamil.com</h2>
             <h2 class="address">Bharatpur-4,Chitwan</h2>
-            <p class="copyright">&copy; 2022 Harish. All Rights Reserved</p>
+            <p class="copyright">&copy; <span id="copyrights"></span> Harish. All Rights Reserved</p>
             <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
               <li>
-                <a href="www.linkedin.com/in/harish-k-pandey" target="_blank"><i class="lab la-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/harish-k-pandey/" target="_blank"><i class="lab la-linkedin"></i></a>
               </li>
               <li>
                 <a href="https://www.instagram.com/harish.pandey_/" target="_blank"><i class="lab la-instagram"></i></a>
@@ -532,6 +532,11 @@
         </div>
       </div>
     </main>
+    <script>
+      const date = new Date();
+      document.getElementById("copyright").innerHTML = date.getFullYear();
+      document.getElementById("copyrights").innerHTML = date.getFullYear();
+    </script>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
