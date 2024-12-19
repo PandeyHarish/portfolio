@@ -48,10 +48,10 @@
     <video class="body-overlay" muted autoplay loop>
       <source src="assets/images/video3.mp4" type="video/mp4" />
     </video>
-
+<!-- 
     <div class="page-loader">
       <div class="bounceball"></div>
-    </div>
+    </div> -->
 
     <span class="icon-menu">
       <span class="bar"></span>
@@ -140,7 +140,8 @@
         <img src="assets/images/logo.png" alt="Logo" style="width: 100px" />
         <span class="designation">Fullstack Web Developer</span>
       </div>
-      <img class="me" src="assets/images/me.png" alt="Me" style="height: 200px; object-fit: cover" />
+      <img class="me" src="assets/images/me.png" alt="Me" style="max-width: 100%; height: auto; object-fit: cover" />
+
       <h2 class="email" style="font-size: 20px">pandeyharish394@gamil.com</h2>
       <h2 class="address">Bharatpur-4,Chitwan</h2>
       <p class="copyright">&copy; <span id="copyright"></span> Harish. All Rights Reserved</p>
@@ -484,15 +485,10 @@
                 <h3 class="scroll-animation" data-animation="fade_from_bottom">PandeyHarish394@gmail.com</h3>
                 <p id="required-msg">* Marked fields are required to fill.</p>
 
-                <form
-                  class="contact-form scroll-animation"
-                  data-animation="fade_from_bottom"
-                  method="POST"
-                  action="https://wpriverthemes.com/HTML/drake/mailer.php"
-                >
-                  <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
-                    Your message was sent successfully.
-                  </div>
+                <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" id="contact-form">
+                  <!-- <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                    <p>Your message was sent successfully.</p>
+                  </div> -->
                   <div class="row">
                     <div class="col-md-6">
                       <div class="input-group">
@@ -549,5 +545,28 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/color.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm("service_hv9jdfe", "template_s4ba6wa", this).then(
+            () => {
+              window.location.reload();
+            },
+            (error) => {
+              console.log("FAILED...", error);
+            }
+          );
+        });
+      };
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("HOlsFzZ_06UZl0va9");
+      })();
+    </script>
   </body>
 </html>
